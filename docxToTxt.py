@@ -40,6 +40,7 @@ for i, entry in enumerate(indexes):
         f.write(text)
     with open(os.path.join(output, "html", f"{chapter}.html"), "w", encoding="utf-8") as f:
         addedtext = ""
+        print(chapter)
         if os.path.exists(f"./imgs/{chapter}.jpg"):
             addedtext = imgtag.replace("INSERTIMG", f"./images/{chapter}.jpg")
             print(addedtext)
